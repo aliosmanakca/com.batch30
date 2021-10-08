@@ -57,5 +57,12 @@ public class C03_Locators {
 
         List<WebElement> linkSayisi =driver.findElements(By.tagName("a"));
         System.out.println("Websayfasındaki link sayısı : "+linkSayisi.size());
+
+        //4. Linklerin yazilarini yazdiralim
+
+        for (WebElement each: linkSayisi
+             ) {
+            System.out.println(each.getText());
+        }
     }
 }
